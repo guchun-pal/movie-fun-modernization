@@ -32,9 +32,9 @@ public class SetupController {
             moviesClient.addMovie(movie);
         }
 
-        for (AlbumInfo album : albumFixtures.load()) {
+       /* for (AlbumInfo album : albumFixtures.load()) {
             albumsClient.addAlbum(album);
-        }
+        }*/
 
         model.put("movies", moviesClient.getMovies());
         model.put("albums", albumsClient.getAlbums());
