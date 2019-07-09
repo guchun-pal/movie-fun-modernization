@@ -9,7 +9,6 @@ version = "1.1.0-SNAPSHOT"
 description = "OpenEJB :: Web Examples :: Moviefun"
 
 dependencies {
-    compile project(":components:movies")
     compile project(":components:albums")
 
     compile "org.springframework.boot:spring-boot-starter-web"
@@ -28,4 +27,7 @@ dependencies {
     compile "org.apache.tomee:javaee-api:8.0"
 
     testCompile "junit:junit:$junitVersion"
+
+    compile project(":components:movie-fun-api")
+    compile project(":components:cf-support")
 }
